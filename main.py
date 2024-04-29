@@ -40,11 +40,11 @@ def create_tables():
 # Функція для симуляції обслуговування клієнтів та збереження даних у базі
 def simulate_service():
     conn = psycopg2.connect(
-        dbname="your_database_name",
-        user="your_username",
-        password="your_password",
-        host="your_host",
-        port="your_port"
+        dbname="BankDB",
+        user="Roman",
+        password="123",
+        host="localhost",
+        port="5432"
     )
     cursor = conn.cursor()
 
@@ -84,11 +84,11 @@ def simulate_service():
 # Функція для виконання SQL-запитів та виведення статистики
 def get_statistics():
     conn = psycopg2.connect(
-        dbname="your_database_name",
-        user="your_username",
-        password="your_password",
-        host="your_host",
-        port="your_port"
+        dbname="BankDB",
+        user="Roman",
+        password="123",
+        host="localhost",
+        port="5432"
     )
     cursor = conn.cursor()
 
